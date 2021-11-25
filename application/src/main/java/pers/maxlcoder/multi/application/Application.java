@@ -17,6 +17,7 @@ public class Application {
 
     @GetMapping("/")
     public String home() {
+        System.out.println(myService.message());
         return myService.message();
     }
     public static void main(String[] args) {
